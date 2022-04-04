@@ -1,4 +1,7 @@
 def isDivisible2(n):
+    '''
+    Checking Divisibility Of 2
+    '''
 
     a=str(n)
     if(int(a[-1]) in(2,4,6,8,0)):
@@ -6,6 +9,11 @@ def isDivisible2(n):
     else:
         return False
 def isDivisible3(n):
+    '''
+    :param n:
+    Checking Divisiblity By 3
+    :return:
+    '''
     if (n in (3, 6, 9)):
         return True
     if(len(str(n))==1):
@@ -16,7 +24,11 @@ def isDivisible3(n):
         return(isDivisible3(n2))
 
 def isDivisible4(n):
-
+    '''
+    Checking Divisiblity by 4
+    :param n:
+    :return:
+    '''
 
     n1 = str(n)
     n2 = n1[-2:-1]+n1[-1]
@@ -87,7 +99,12 @@ def isDivisible4(n):
 # #     if(int(a[-1]) in(2,4,6,8,0)):
 # #         return 4
 def isDivisible5(n):
+    '''
+    Checking Divsibility by 5
 
+    :param n:
+    :return:
+    '''
     a=str(n)
     if(int(a[-1]) in(5,0)):
         return True
@@ -95,7 +112,11 @@ def isDivisible5(n):
         return False
 
 def isDivisible6(n):
-
+    '''
+    Checking Divisibilty By 6
+    :param n:
+    :return:
+    '''
     a=str(n)
     if(int(a[-1]) in(2,4,6,8)):
         return True
@@ -103,7 +124,11 @@ def isDivisible6(n):
 
         return False
 def isDivisible7(n):
-
+    '''
+    Checking Divisibility By 7
+    :param n:
+    :return:
+    '''
     noo = 0
     flag = 0
     a=str(n)
@@ -116,6 +141,11 @@ def isDivisible7(n):
     else:
         return False
 def isDivisible8(n):
+    '''
+    Checking Divisibility by 8
+    :param n:
+    :return:
+    '''
     n=str(n)
     if (len(n) >= 3):
 
@@ -161,7 +191,11 @@ def isDivisible8(n):
 
 
 def isDivisible9(n):
-
+    '''
+    Checking Divisibility by 9
+    :param n:
+    :return:
+    '''
     n=str(n)
     sum=0
     for i in n:
@@ -217,7 +251,10 @@ def Numbers_All(n):
 
         if(len(L)!=0):
 
-            print("{}: is divisible by {}".format(x,L) )
+
+            if (L[-1] == ","):
+                L = L[0:len(L) - 1]
+            print("{}: is divisible by {}".format(x, L))
         else:
 
             print("{}: is not divisible{}".format(x, L))
