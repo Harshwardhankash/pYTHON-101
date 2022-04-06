@@ -1,3 +1,7 @@
+import math
+
+
+
 def isDivisible2(n):
     '''
     Checking Divisibility Of 2
@@ -5,6 +9,7 @@ def isDivisible2(n):
 
     a=str(n)
     if(int(a[-1]) in(2,4,6,8,0)):
+        two=1
         return True
     else:
         return False
@@ -15,6 +20,7 @@ def isDivisible3(n):
     :return:
     '''
     if (n in (3, 6, 9)):
+        three=1
         return True
     if(len(str(n))==1):
         return False
@@ -111,18 +117,23 @@ def isDivisible5(n):
     else:
         return False
 
-def isDivisible6(n):
+def isDivisible6(n,two,three):
     '''
     Checking Divisibilty By 6
     :param n:
     :return:
     '''
-    a=str(n)
-    if(int(a[-1]) in(2,4,6,8)):
+    if((two==1)and(three==1)):
         return True
     else:
-
         return False
+
+    a=str(n)
+    # if(int(a[-1]) in(2,4,6,8)):
+    #     return True
+    # else:
+    #
+    #     return False
 def isDivisible7(n):
     '''
     Checking Divisibility By 7
@@ -220,19 +231,33 @@ def isDivisible9(n):
         return isDivisible9(n2)
 
 
-def Numbers_All(n):
+def Numbers_All(n,two,three):
+
     for x in n:
+
+        x=round(x)
+        x=int(x)
+        try:
+            if(x!=int(x)) or(str(x)[0:1]=="-"):
+                x=int(x)
+                x=abs(x)
+                x=x.split(".")
+                print("No. is negative or No. is decimal")
+        except Exception as e1:
+                print("Generic error: {0}".format(e1))
 
         L=""
         if(isDivisible2(x)):
+            two=1
             L=L+str(2)+","
         if (isDivisible3(x)):
+            three=1
             L=L+str(3)+","
         if (isDivisible4(x)):
             L=L+str(4)+","
         if (isDivisible5(x)):
             L=L+str(5)+","
-        if (isDivisible6(x)):
+        if (isDivisible6(x,two,three)):
             L=L+str(6)+","
         if (isDivisible7(x)):
             L=L+str(7)+","
@@ -258,79 +283,12 @@ def Numbers_All(n):
         else:
 
             print("{}: is not divisible{}".format(x, L))
-
-
-numb=input("Enter the values")
-numb=list(map(int,numb.split(",")))
-
-Numbers_All(numb)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def main():
+
+
+    numb=input("Enter the values")
+    numb=list(map(float,numb.split(",")))
+    two=0
+    three=0
+    Numbers_All(numb,two,three)
+main()
