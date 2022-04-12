@@ -3,9 +3,20 @@ import math
 
 
 def isDivisible2(n):
-    '''
-    Checking Divisibility Of 2
-    '''
+    """
+    Check the divisibility of 'n' by 
+    3
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      3
+      """
+      
+    
+    
 
     a=str(n)
     if(int(a[-1]) in(2,4,6,8,0)):
@@ -14,11 +25,17 @@ def isDivisible2(n):
     else:
         return False
 def isDivisible3(n):
-    '''
-    :param n:
-    Checking Divisiblity By 3
-    :return:
-    '''
+     """
+    Check the divisibility of 'n' by 
+    3
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      3
+      """
     if (n in (3, 6, 9)):
         three=1
         return True
@@ -30,11 +47,17 @@ def isDivisible3(n):
         return(isDivisible3(n2))
 
 def isDivisible4(n):
-    '''
-    Checking Divisiblity by 4
-    :param n:
-    :return:
-    '''
+    """
+    Check the divisibility of 'n' by 
+    3
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      3
+      """
 
     n1 = str(n)
     n2 = n1[-2:-1]+n1[-1]
@@ -118,11 +141,17 @@ def isDivisible5(n):
         return False
 
 def isDivisible6(n,two,three):
-    '''
-    Checking Divisibilty By 6
-    :param n:
-    :return:
-    '''
+    """
+    Check the divisibility of 'n' by 
+    3
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      3
+      """
     if((two==1)and(three==1)):
         return True
     else:
@@ -135,11 +164,17 @@ def isDivisible6(n,two,three):
     #
     #     return False
 def isDivisible7(n):
-    '''
-    Checking Divisibility By 7
-    :param n:
-    :return:
-    '''
+     """
+    Check the divisibility of 'n' by 
+    3
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      3
+      """
     noo = 0
     flag = 0
     a=str(n)
@@ -152,11 +187,17 @@ def isDivisible7(n):
     else:
         return False
 def isDivisible8(n):
-    '''
-    Checking Divisibility by 8
-    :param n:
-    :return:
-    '''
+    """
+    Check the divisibility of 'n' by 
+    3
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      3
+      """
     n=str(n)
     if (len(n) >= 3):
 
@@ -202,11 +243,17 @@ def isDivisible8(n):
 
 
 def isDivisible9(n):
-    '''
-    Checking Divisibility by 9
-    :param n:
-    :return:
-    '''
+    """
+    Check the divisibility of 'n' by 
+    3
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      3
+      """
     n=str(n)
     sum=0
     for i in n:
