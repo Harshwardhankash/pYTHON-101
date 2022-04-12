@@ -1,11 +1,32 @@
 def isDivisible2(n):
-
+     """
+    Check the divisibility of 'n' by 
+    2
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      2
+      """
     a=str(n)
     if(int(a[-1]) in(2,4,6,8,0)):
         return True
     else:
         return False
 def isDivisible3(n):
+     """
+    Check the divisibility of 'n' by 
+    3
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      3
+      """
     if (n in (3, 6, 9)):
         return True
     if(len(str(n))==1):
@@ -17,7 +38,17 @@ def isDivisible3(n):
 
 def isDivisible4(n):
 
-
+     """
+    Check the divisibility of 'n' by 
+    4
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      4
+      """
     n1 = str(n)
     n2 = n1[-2:-1]+n1[-1]
 
@@ -87,6 +118,17 @@ def isDivisible4(n):
 # #     if(int(a[-1]) in(2,4,6,8,0)):
 # #         return 4
 def isDivisible5(n):
+     """
+    Check the divisibility of 'n' by 
+    5
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      5
+      """
 
     a=str(n)
     if(int(a[-1]) in(5,0)):
@@ -95,7 +137,17 @@ def isDivisible5(n):
         return False
 
 def isDivisible6(n):
-
+     """
+    Check the divisibility of '6' by 
+    6
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      6
+      """
     a=str(n)
     if(int(a[-1]) in(2,4,6,8)):
         return True
@@ -103,7 +155,18 @@ def isDivisible6(n):
 
         return False
 def isDivisible7(n):
-
+    
+     """
+    Check the divisibility of 'n' by 
+    7
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      7
+      """
     noo = 0
     flag = 0
     a=str(n)
@@ -116,6 +179,17 @@ def isDivisible7(n):
     else:
         return False
 def isDivisible8(n):
+     """
+    Check the divisibility of 'n' by 
+    8
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      8
+      """
     n=str(n)
     if (len(n) >= 3):
 
@@ -161,7 +235,18 @@ def isDivisible8(n):
 
 
 def isDivisible9(n):
-
+    
+     """
+    Check the divisibility of 'n' by 
+    9
+    py:function::
+    
+    Args:
+      n(str):the number to check
+    Returns:
+      bool:'True' if 'n'is divisible by
+      9
+      """
     n=str(n)
     sum=0
     for i in n:
